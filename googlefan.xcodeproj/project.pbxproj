@@ -507,6 +507,7 @@
 				4545F3751EF687A400FA43C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4545F3761EF687A400FA43C5 /* Build configuration list for PBXNativeTarget "googlefanTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				4545F3781EF687A400FA43C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4545F3791EF687A400FA43C5 /* Build configuration list for PBXNativeTarget "googlefanUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				4545F37B1EF687A400FA43C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
