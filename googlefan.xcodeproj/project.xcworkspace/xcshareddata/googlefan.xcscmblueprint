@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4F108BFD78F0DFB8053E6B7556B3543120F6AE6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4F108BFD78F0DFB8053E6B7556B3543120F6AE6F" : 9223372036854775807,
+    "A81842341B9EC626B9307E3FD63879D06996AC4C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D97D33BF-5F33-4AC2-BCA8-C596F2855323",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4F108BFD78F0DFB8053E6B7556B3543120F6AE6F" : "googlefan\/",
+    "A81842341B9EC626B9307E3FD63879D06996AC4C" : "..\/ios\/ComicLover-iPad"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "googlefan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "googlefan.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/levin0922\/googlefan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F108BFD78F0DFB8053E6B7556B3543120F6AE6F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/levin0922\/ComicLover-iPad.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A81842341B9EC626B9307E3FD63879D06996AC4C"
+    }
+  ]
+}

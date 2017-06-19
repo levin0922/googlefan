@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4545F34B1EF687A300FA43C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F34A1EF687A300FA43C5 /* main.m */; };
-		4545F34E1EF687A300FA43C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F34D1EF687A300FA43C5 /* AppDelegate.m */; };
-		4545F3511EF687A300FA43C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F3501EF687A300FA43C5 /* ViewController.m */; };
+		0B424F991EF7AFD800D52027 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 0B424F981EF7AFD800D52027 /* Utils */; };
+		0B424F9B1EF7B0E400D52027 /* UIAlertView-Blocks in Resources */ = {isa = PBXBuildFile; fileRef = 0B424F9A1EF7B0E400D52027 /* UIAlertView-Blocks */; };
+		0B92BEA31EF7BEF600414D97 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 0B92BEA21EF7BEF600414D97 /* AFNetworking */; };
+		0B92BEA51EF7C0BA00414D97 /* AFNetworkingx in Resources */ = {isa = PBXBuildFile; fileRef = 0B92BEA41EF7C0BA00414D97 /* AFNetworkingx */; };
+		0BB8D1511EF7B61A002A2FF8 /* AFNetworkingx in Resources */ = {isa = PBXBuildFile; fileRef = 0BB8D1501EF7B61A002A2FF8 /* AFNetworkingx */; };
+		0BB8D1711EF7B906002A2FF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F34D1EF687A300FA43C5 /* AppDelegate.m */; };
+		0BB8D1721EF7B906002A2FF8 /* DataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B424F941EF79B1A00D52027 /* DataEngine.m */; };
+		0BB8D1731EF7B906002A2FF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F34A1EF687A300FA43C5 /* main.m */; };
+		0BB8D1741EF7B906002A2FF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F3501EF687A300FA43C5 /* ViewController.m */; };
 		4545F3541EF687A300FA43C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4545F3521EF687A300FA43C5 /* Main.storyboard */; };
 		4545F3561EF687A300FA43C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4545F3551EF687A300FA43C5 /* Assets.xcassets */; };
 		4545F3591EF687A300FA43C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4545F3571EF687A300FA43C5 /* LaunchScreen.storyboard */; };
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B424F931EF79B1A00D52027 /* DataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEngine.h; sourceTree = "<group>"; };
+		0B424F941EF79B1A00D52027 /* DataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEngine.m; sourceTree = "<group>"; };
+		0B424F981EF7AFD800D52027 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
+		0B424F9A1EF7B0E400D52027 /* UIAlertView-Blocks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UIAlertView-Blocks"; sourceTree = "<group>"; };
+		0B92BEA21EF7BEF600414D97 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
+		0B92BEA41EF7C0BA00414D97 /* AFNetworkingx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworkingx; sourceTree = "<group>"; };
+		0BB8D1501EF7B61A002A2FF8 /* AFNetworkingx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworkingx; sourceTree = "<group>"; };
 		4545F3461EF687A300FA43C5 /* googlefan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = googlefan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545F34A1EF687A300FA43C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4545F34C1EF687A300FA43C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,15 +114,22 @@
 		4545F3481EF687A300FA43C5 /* googlefan */ = {
 			isa = PBXGroup;
 			children = (
+				0B92BEA41EF7C0BA00414D97 /* AFNetworkingx */,
+				0B92BEA21EF7BEF600414D97 /* AFNetworking */,
+				0BB8D1501EF7B61A002A2FF8 /* AFNetworkingx */,
 				4545F34C1EF687A300FA43C5 /* AppDelegate.h */,
 				4545F34D1EF687A300FA43C5 /* AppDelegate.m */,
+				4545F3551EF687A300FA43C5 /* Assets.xcassets */,
+				0B424F931EF79B1A00D52027 /* DataEngine.h */,
+				0B424F941EF79B1A00D52027 /* DataEngine.m */,
+				4545F35A1EF687A300FA43C5 /* Info.plist */,
+				4545F3571EF687A300FA43C5 /* LaunchScreen.storyboard */,
+				4545F3521EF687A300FA43C5 /* Main.storyboard */,
+				4545F3491EF687A300FA43C5 /* Supporting Files */,
+				0B424F9A1EF7B0E400D52027 /* UIAlertView-Blocks */,
+				0B424F981EF7AFD800D52027 /* Utils */,
 				4545F34F1EF687A300FA43C5 /* ViewController.h */,
 				4545F3501EF687A300FA43C5 /* ViewController.m */,
-				4545F3521EF687A300FA43C5 /* Main.storyboard */,
-				4545F3551EF687A300FA43C5 /* Assets.xcassets */,
-				4545F3571EF687A300FA43C5 /* LaunchScreen.storyboard */,
-				4545F35A1EF687A300FA43C5 /* Info.plist */,
-				4545F3491EF687A300FA43C5 /* Supporting Files */,
 			);
 			path = googlefan;
 			sourceTree = "<group>";
@@ -147,7 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4545F3731EF687A400FA43C5 /* Build configuration list for PBXNativeTarget "googlefan" */;
 			buildPhases = (
-				4545F3421EF687A300FA43C5 /* Sources */,
+				0BB8D1701EF7B8FC002A2FF8 /* Sources */,
 				4545F3431EF687A300FA43C5 /* Frameworks */,
 				4545F3441EF687A300FA43C5 /* Resources */,
 			);
@@ -248,7 +268,12 @@
 			files = (
 				4545F3591EF687A300FA43C5 /* LaunchScreen.storyboard in Resources */,
 				4545F3561EF687A300FA43C5 /* Assets.xcassets in Resources */,
+				0B92BEA31EF7BEF600414D97 /* AFNetworking in Resources */,
+				0B424F991EF7AFD800D52027 /* Utils in Resources */,
+				0B92BEA51EF7C0BA00414D97 /* AFNetworkingx in Resources */,
 				4545F3541EF687A300FA43C5 /* Main.storyboard in Resources */,
+				0B424F9B1EF7B0E400D52027 /* UIAlertView-Blocks in Resources */,
+				0BB8D1511EF7B61A002A2FF8 /* AFNetworkingx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,13 +294,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4545F3421EF687A300FA43C5 /* Sources */ = {
+		0BB8D1701EF7B8FC002A2FF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4545F3511EF687A300FA43C5 /* ViewController.m in Sources */,
-				4545F34E1EF687A300FA43C5 /* AppDelegate.m in Sources */,
-				4545F34B1EF687A300FA43C5 /* main.m in Sources */,
+				0BB8D1711EF7B906002A2FF8 /* AppDelegate.m in Sources */,
+				0BB8D1721EF7B906002A2FF8 /* DataEngine.m in Sources */,
+				0BB8D1731EF7B906002A2FF8 /* main.m in Sources */,
+				0BB8D1741EF7B906002A2FF8 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,22 +449,30 @@
 		4545F3741EF687A400FA43C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/googlefan/**";
 				INFOPLIST_FILE = googlefan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yooli.googlefan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 			};
 			name = Debug;
 		};
 		4545F3751EF687A400FA43C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/googlefan/**";
 				INFOPLIST_FILE = googlefan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yooli.googlefan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 			};
 			name = Release;
 		};
