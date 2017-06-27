@@ -132,14 +132,8 @@
     [_afNormalManager POST:@""
                 parameters:dict
                    success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                       NSString *errorMsg = @"haha";
-                       if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                           errorMsg = @"ss";
-                           if (errorMsg == nil) {
-                           }
-                       }
                        if (success) {
-                           success(operation, responseObject, errorMsg);
+                           success(operation, responseObject, nil);
                        }
                    }
                    failure:^(AFHTTPRequestOperation *operation, NSError *error) {

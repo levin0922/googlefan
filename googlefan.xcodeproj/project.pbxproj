@@ -47,6 +47,17 @@
 		0B51416B1F01FEB100D22D62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B51416A1F01FEB100D22D62 /* CoreGraphics.framework */; };
 		0B51416D1F01FEDD00D22D62 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B51416C1F01FEDD00D22D62 /* Security.framework */; };
 		0B51416F1F01FEF500D22D62 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B51416E1F01FEF500D22D62 /* CoreTelephony.framework */; };
+		0B5141901F02175300D22D62 /* naviButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51418C1F02175300D22D62 /* naviButton.png */; };
+		0B5141911F02175300D22D62 /* naviButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51418D1F02175300D22D62 /* naviButton@2x.png */; };
+		0B5141921F02175300D22D62 /* naviButton_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51418E1F02175300D22D62 /* naviButton_sel.png */; };
+		0B5141931F02175300D22D62 /* naviButton_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51418F1F02175300D22D62 /* naviButton_sel@2x.png */; };
+		0B51419D1F022C0500D22D62 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5141951F022C0500D22D62 /* 37x-Checkmark.png */; };
+		0B51419E1F022C0500D22D62 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5141961F022C0500D22D62 /* 37x-Checkmark@2x.png */; };
+		0B51419F1F022C0500D22D62 /* 37x-Checkmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5141971F022C0500D22D62 /* 37x-Checkmark@3x.png */; };
+		0B5141A01F022C0500D22D62 /* activitycross.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5141981F022C0500D22D62 /* activitycross.png */; };
+		0B5141A11F022C0500D22D62 /* activitycross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5141991F022C0500D22D62 /* activitycross@2x.png */; };
+		0B5141A21F022C0500D22D62 /* activitycross@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B51419A1F022C0500D22D62 /* activitycross@3x.png */; };
+		0B5141A31F022C0500D22D62 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B51419C1F022C0500D22D62 /* MBProgressHUD.m */; };
 		0BB8D1711EF7B906002A2FF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F34D1EF687A300FA43C5 /* AppDelegate.m */; };
 		0BB8D1721EF7B906002A2FF8 /* DataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B424F941EF79B1A00D52027 /* DataEngine.m */; };
 		0BB8D1731EF7B906002A2FF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545F34A1EF687A300FA43C5 /* main.m */; };
@@ -155,6 +166,18 @@
 		0B51416A1F01FEB100D22D62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0B51416C1F01FEDD00D22D62 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0B51416E1F01FEF500D22D62 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0B51418C1F02175300D22D62 /* naviButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviButton.png; sourceTree = "<group>"; };
+		0B51418D1F02175300D22D62 /* naviButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "naviButton@2x.png"; sourceTree = "<group>"; };
+		0B51418E1F02175300D22D62 /* naviButton_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviButton_sel.png; sourceTree = "<group>"; };
+		0B51418F1F02175300D22D62 /* naviButton_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "naviButton_sel@2x.png"; sourceTree = "<group>"; };
+		0B5141951F022C0500D22D62 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		0B5141961F022C0500D22D62 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
+		0B5141971F022C0500D22D62 /* 37x-Checkmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@3x.png"; sourceTree = "<group>"; };
+		0B5141981F022C0500D22D62 /* activitycross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitycross.png; sourceTree = "<group>"; };
+		0B5141991F022C0500D22D62 /* activitycross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activitycross@2x.png"; sourceTree = "<group>"; };
+		0B51419A1F022C0500D22D62 /* activitycross@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activitycross@3x.png"; sourceTree = "<group>"; };
+		0B51419B1F022C0500D22D62 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0B51419C1F022C0500D22D62 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		4545F3461EF687A300FA43C5 /* googlefan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = googlefan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545F34A1EF687A300FA43C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4545F34C1EF687A300FA43C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -364,6 +387,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0B51418B1F02175300D22D62 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0B51418C1F02175300D22D62 /* naviButton.png */,
+				0B51418D1F02175300D22D62 /* naviButton@2x.png */,
+				0B51418E1F02175300D22D62 /* naviButton_sel.png */,
+				0B51418F1F02175300D22D62 /* naviButton_sel@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		0B5141941F022C0500D22D62 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0B5141951F022C0500D22D62 /* 37x-Checkmark.png */,
+				0B5141961F022C0500D22D62 /* 37x-Checkmark@2x.png */,
+				0B5141971F022C0500D22D62 /* 37x-Checkmark@3x.png */,
+				0B5141981F022C0500D22D62 /* activitycross.png */,
+				0B5141991F022C0500D22D62 /* activitycross@2x.png */,
+				0B51419A1F022C0500D22D62 /* activitycross@3x.png */,
+				0B51419B1F022C0500D22D62 /* MBProgressHUD.h */,
+				0B51419C1F022C0500D22D62 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		4545F33D1EF687A300FA43C5 = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +437,8 @@
 		4545F3481EF687A300FA43C5 /* googlefan */ = {
 			isa = PBXGroup;
 			children = (
+				0B5141941F022C0500D22D62 /* MBProgressHUD */,
+				0B51418B1F02175300D22D62 /* images */,
 				0B20B3AF1F01F77D00AC28E5 /* UIAlertView-Blocks */,
 				0B20B3671F01F6E700AC28E5 /* Utils */,
 				0B20B3501F01F6D300AC28E5 /* AFNetworking */,
@@ -500,6 +551,7 @@
 				TargetAttributes = {
 					4545F3451EF687A300FA43C5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85D3XE2MM6;
 						ProvisioningStyle = Automatic;
 					};
 					4545F35E1EF687A300FA43C5 = {
@@ -539,9 +591,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5141A11F022C0500D22D62 /* activitycross@2x.png in Resources */,
 				4545F3591EF687A300FA43C5 /* LaunchScreen.storyboard in Resources */,
 				4545F3561EF687A300FA43C5 /* Assets.xcassets in Resources */,
+				0B5141921F02175300D22D62 /* naviButton_sel.png in Resources */,
+				0B5141931F02175300D22D62 /* naviButton_sel@2x.png in Resources */,
+				0B51419D1F022C0500D22D62 /* 37x-Checkmark.png in Resources */,
+				0B5141A21F022C0500D22D62 /* activitycross@3x.png in Resources */,
+				0B51419E1F022C0500D22D62 /* 37x-Checkmark@2x.png in Resources */,
 				4545F3541EF687A300FA43C5 /* Main.storyboard in Resources */,
+				0B5141901F02175300D22D62 /* naviButton.png in Resources */,
+				0B51419F1F022C0500D22D62 /* 37x-Checkmark@3x.png in Resources */,
+				0B5141A01F022C0500D22D62 /* activitycross.png in Resources */,
+				0B5141911F02175300D22D62 /* naviButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +650,7 @@
 				0B20B3AA1F01F6E700AC28E5 /* NSStringExtra.m in Sources */,
 				0B20B39A1F01F6E700AC28E5 /* GTMBase64.m in Sources */,
 				0B20B3C01F01F77D00AC28E5 /* UIActionSheet+Blocks.m in Sources */,
+				0B5141A31F022C0500D22D62 /* MBProgressHUD.m in Sources */,
 				0B20B3A71F01F6E700AC28E5 /* NSString+Extra.m in Sources */,
 				0B20B3AE1F01F6E700AC28E5 /* TimeIntervalUtils.m in Sources */,
 				0B20B3A41F01F6E700AC28E5 /* NSString+MD5.mm in Sources */,
@@ -753,6 +816,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85D3XE2MM6;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "googlefan/googlefan-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/googlefan/**";
@@ -770,6 +834,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85D3XE2MM6;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "googlefan/googlefan-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/googlefan/**";

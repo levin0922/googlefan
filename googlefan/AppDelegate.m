@@ -14,12 +14,13 @@
 
 @implementation AppDelegate
 
++ (AppDelegate *)theAppDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[DataEngine sharedInstance] translateSimple:@"hello"
-                                         success:nil
-                                         failure:nil];
     return YES;
 }
 
@@ -50,5 +51,115 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - global MBProgressHUD funs
+- (void)showActivityView:(NSString *)text
+                  inView:(UIView*)view
+{
+    if (view == nil) {
+        view = self.window;
+    }
+    BOOL has = [MBProgressHUD hideHUDForView:view animated:NO];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:!has];
+    HUD.delegate = self;
+    HUD.labelText = @"";
+    HUD.detailsLabelText = text;
+}
 
+- (void)hideActivityView:(UIView *)view {
+    [MBProgressHUD hideHUDForView:view animated:YES];
+}
+
+- (void)showFinishActivityView:(NSString*)text
+                      interval:(NSTimeInterval)time
+                        inView:(UIView*)view
+{
+    if (view == nil) {
+        view = self.window;
+    }
+    BOOL has = [MBProgressHUD hideHUDForView:view animated:NO];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:!has];
+    HUD.delegate = self;
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.labelText = @"";
+    HUD.detailsLabelText = text;
+    [HUD hide:YES afterDelay:time];
+}
+
+- (void)showFailedActivityView:(NSString*)text
+                      interval:(NSTimeInterval)time
+                        inView:(UIView*)view
+{
+    if (view == nil) {
+        view = self.window;
+    }
+    BOOL has = [MBProgressHUD hideHUDForView:view animated:NO];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:!has];
+    HUD.delegate = self;
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"activitycross.png"]];
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.labelText = @"";
+    HUD.detailsLabelText = text;
+    [HUD hide:YES afterDelay:time];
+}
+
+- (void)showFinishToastActivityView:(NSString *)text
+                           interval:(NSTimeInterval)time
+                             inView:(UIView *)view
+{
+    if (view == nil) {
+        view = self.window;
+    }
+    BOOL has = [MBProgressHUD hideHUDForView:view animated:NO];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:!has];
+    HUD.delegate = self;
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.userInteractionEnabled = NO;
+    HUD.labelText = @"";
+    HUD.detailsLabelText = text;
+    [HUD hide:YES afterDelay:time];
+}
+
+- (void)showFailedToastActivityView:(NSString *)text
+                           interval:(NSTimeInterval)time
+                             inView:(UIView *)view
+{
+    if (view == nil) {
+        view = self.window;
+    }
+    BOOL has = [MBProgressHUD hideHUDForView:view animated:NO];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:!has];
+    HUD.delegate = self;
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"activitycross.png"]];
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.userInteractionEnabled = NO;
+    HUD.labelText = @"";
+    HUD.detailsLabelText = text;
+    [HUD hide:YES afterDelay:time];
+}
+
+- (void)showToastActivityView:(NSString *)text
+                     interval:(NSTimeInterval)time
+                       inView:(UIView *)view
+{
+    if (view == nil) {
+        view = self.window;
+    }
+    BOOL has = [MBProgressHUD hideHUDForView:view animated:NO];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:!has];
+    HUD.delegate = self;
+    HUD.customView = [[UIImageView alloc] init];
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.userInteractionEnabled = NO;
+    HUD.labelText = @"";
+    HUD.detailsLabelText = text;
+    [HUD hide:YES afterDelay:time];
+}
 @end

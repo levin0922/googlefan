@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextView *textview1;
+@property (strong, nonatomic) IBOutlet UITextView *textview2;
+@property (weak, nonatomic) IBOutlet UILabel *promptLabel;
 
+@property (strong, nonatomic) IBOutlet UIButton *clearButton;
+@property (strong, nonatomic) IBOutlet UIButton *fanButton;
+
+- (IBAction)fanyi:(id)sender;
+- (IBAction)qingkong:(id)sender;
 @end
 
