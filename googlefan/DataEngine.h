@@ -38,6 +38,16 @@
                          withParam:(NSDictionary *)param;
 
 #pragma mark - Login
+- (NSOperation *)translate:(NSString *)q
+                withTarget:(NSString *)target
+                withFormat:(NSString *)format
+                withSource:(NSString *)source
+                 withModel:(NSString *)model
+                   success:(void (^)(AFHTTPRequestOperation *operation, id responseObject, NSString *errorMsg))success
+                   failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+- (NSOperation *)translateSimple:(NSString *)q
+                         success:(void (^)(AFHTTPRequestOperation *operation, id responseObject, NSString *errorMsg))success
+                         failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 - (NSOperation *)loginByEmailAccount:(NSNumber *)source
                            withEmail:(NSString *)email
                         withPassword:(NSString *)password

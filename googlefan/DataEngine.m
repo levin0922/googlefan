@@ -102,6 +102,70 @@
     return [NSDictionary dictionaryWithObjectsAndKeys:method, @"method", timestamp, @"timestamp", paramJson, @"param", sig, @"sig", nil];
 }
 
+- (NSOperation *)translate:(NSString *)q
+                withTarget:(NSString *)target
+                withFormat:(NSString *)format
+                withSource:(NSString *)source
+                 withModel:(NSString *)model
+                   success:(void (^)(AFHTTPRequestOperation *operation, id responseObject, NSString *errorMsg))success
+                   failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    if (q.length == 0) {
+        return nil;
+    }
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:q
+             forKey:@"q"];
+    [dict setObject:target.length ? target : @"zh-CN"
+             forKey:@"target"];
+    [dict setObject:format.length ? format : @"text"
+             forKey:@"format"];
+    if (source.length) {
+        [dict setObject:source
+                 forKey:@"source"];
+    }
+    [dict setObject:@"nmt"
+             forKey:@"model"];
+    [dict setObject:@"AIzaSyBvKcmcDJ_oK__hCvfBnnSd3I3QUy7h3nE"
+             forKey:@"key"];
+    AFHTTPRequestOperation *operation =
+    [_afNormalManager POST:@""
+                parameters:dict
+                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                       NSString *errorMsg = @"haha";
+                       if ([responseObject isKindOfClass:[NSDictionary class]]) {
+                           errorMsg = @"ss";
+                           if (errorMsg == nil) {
+                           }
+                       }
+                       if (success) {
+                           success(operation, responseObject, errorMsg);
+                       }
+                   }
+                   failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                       NSLog(@"%@", error.localizedDescription);
+                       if (![error.domain isEqualToString:NSURLErrorDomain] || error.code != NSURLErrorCancelled) {
+                           if (failure) {
+                               failure(operation, error);
+                           }
+                       }
+                   }];
+    return operation;
+}
+
+- (NSOperation *)translateSimple:(NSString *)q
+                         success:(void (^)(AFHTTPRequestOperation *operation, id responseObject, NSString *errorMsg))success
+                         failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+    return [self translate:q
+                withTarget:nil
+                withFormat:nil
+                withSource:nil
+                 withModel:nil
+                   success:success
+                   failure:failure];
+}
+
 - (NSOperation *)loginByEmailAccount:(NSNumber *)source
                            withEmail:(NSString *)email
                         withPassword:(NSString *)password

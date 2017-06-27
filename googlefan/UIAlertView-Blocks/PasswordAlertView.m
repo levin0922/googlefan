@@ -95,19 +95,11 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 - (UIView *)passwordAccessoryView
 {
     if (!_passwordAccessoryView) {
-        if (SYSTEM_VERSION_LESS_THAN(@"8.0")) {
-            _passwordAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(14.0, 45.0, 256.0, 25.0)];
-        } else {
-            _passwordAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(14.0, 45.0, 256.0, 35.0)];
-        }
+        _passwordAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(14.0, 45.0, 256.0, 35.0)];
         _passwordAccessoryView.backgroundColor = [UIColor clearColor];
         [_passwordAccessoryView addSubview:self.plainTextField];
         self.plainTextField.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        if (SYSTEM_VERSION_LESS_THAN(@"8.0")) {
-            self.plainTextField.frame = _passwordAccessoryView.bounds;
-        } else {
-            self.plainTextField.frame = CGRectMake(14, 0, _passwordAccessoryView.bounds.size.width - 28, _passwordAccessoryView.bounds.size.height - 10);
-        }
+        self.plainTextField.frame = CGRectMake(14, 0, _passwordAccessoryView.bounds.size.width - 28, _passwordAccessoryView.bounds.size.height - 10);
     }
     return _passwordAccessoryView;
 }
@@ -119,12 +111,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 
 - (void)addTypePlain
 {
-    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
-        self.message = @"\n";
-        [self addSubview:self.passwordAccessoryView];
-    } else {
-        [self setValue:self.passwordAccessoryView forKey:@"accessoryView"];
-    }
+    [self setValue:self.passwordAccessoryView forKey:@"accessoryView"];
     [self.plainTextField becomeFirstResponder];
 }
 

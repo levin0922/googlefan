@@ -419,9 +419,9 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
 	NSMutableData *result = [NSMutableData data];
 	[result setLength:maxLength];
 	// do it
-	NSUInteger finalLength = [self baseEncode:bytes
+	NSUInteger finalLength = [self baseEncode:(char *)bytes
 									   srcLen:length
-									destBytes:[result mutableBytes]
+									destBytes:(char *)[result mutableBytes]
 									  destLen:[result length]
 									  charset:charset
 									   padded:padded];
@@ -455,9 +455,9 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
 	NSMutableData *result = [NSMutableData data];
 	[result setLength:maxLength];
 	// do it
-	NSUInteger finalLength = [self baseDecode:bytes
+	NSUInteger finalLength = [self baseDecode:(char *)bytes
 									   srcLen:length
-									destBytes:[result mutableBytes]
+									destBytes:(char *)[result mutableBytes]
 									  destLen:[result length]
 									  charset:charset
 							   requirePadding:requirePadding];

@@ -30,7 +30,7 @@
     mib[0] = CTL_HW;
     mib[1] = HW_MACHINE;
     sysctl(mib, 2, NULL, &len, NULL, 0);
-    machine = malloc(len);
+    machine = (char *)malloc(len);
     sysctl(mib, 2, machine, &len, NULL, 0);
     
     NSString *platform = [NSString stringWithCString:machine encoding:NSASCIIStringEncoding];
@@ -70,7 +70,7 @@
         return NULL;
     }
     
-    if ((buf = malloc(len)) == NULL) {
+    if ((buf = (char *)malloc(len)) == NULL) {
 #ifdef DEBUG
         printf("Could not allocate memory. error!\n");
 #endif

@@ -21,7 +21,6 @@
 // THE SOFTWARE.
 
 #import "AFURLResponseSerialization.h"
-#import "SDImageCache+Additional.h"
 
 extern NSString * const AFNetworkingErrorDomain;
 extern NSString * const AFNetworkingOperationFailingURLResponseErrorKey;
@@ -509,16 +508,16 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
 #import <CoreGraphics/CoreGraphics.h>
 
 static UIImage * AFImageWithDataAtScale(NSData *data, CGFloat scale) {
-    UIImage *image = [[UIImage alloc] initWithData:data];
-    if (image == nil) {
-        NSString *imageContentType = [NSData sd_contentTypeForImageData:data];
-        if ([imageContentType isEqualToString:@"image/webp"]) {
-            image = [UIImage sd_imageWithWebPData:data];
-        }
-    }
-    if (image) {
-        return [[UIImage alloc] initWithCGImage:[image CGImage] scale:scale orientation:image.imageOrientation];
-    }
+//    UIImage *image = [[UIImage alloc] initWithData:data];
+//    if (image == nil) {
+//        NSString *imageContentType = [NSData sd_contentTypeForImageData:data];
+//        if ([imageContentType isEqualToString:@"image/webp"]) {
+//            image = [UIImage sd_imageWithWebPData:data];
+//        }
+//    }
+//    if (image) {
+//        return [[UIImage alloc] initWithCGImage:[image CGImage] scale:scale orientation:image.imageOrientation];
+//    }
     return nil;
 }
 
